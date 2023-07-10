@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677,#4e055f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 340px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(251, 140, 100);
+    margin-top: 20px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.todo-app img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 25px;
+    background: orangered;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#list-container{
+    margin-top:17px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 5px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(images/circle-regular.svg);
+    background-size: cover;
+    background-position: center;
+    top :9px;
+    left: 15px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/circle-check-solid.svg);
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    background: orangered;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 50%;
+}
+
