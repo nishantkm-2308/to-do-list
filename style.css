@@ -86,7 +86,7 @@ ul li::before{
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background-image: url(images/circle-regular.svg);
+    background-image: url(circle-regular.svg);
     background-size: cover;
     background-position: center;
     top :9px;
@@ -99,7 +99,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image: url(images/circle-check-solid.svg);
+    background-image: url(circle-check-solid.svg);
 }
 
 ul li span{
